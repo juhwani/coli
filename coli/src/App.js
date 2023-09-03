@@ -15,27 +15,27 @@ function App() {
       {/* Top Bar */}
       <div className="Bar">
         <img style = {{height: '4vh', position: 'absolute', left: '3vw'}} src={logos}/>
-        <div className="hori">
-          <div className="column">Home</div>
-          <div className="column">Contact</div>
-          <div className="column">FAQ</div>
-        </div>
-        <button className="About">About</button>
+        <nav className="hori">
+            <a className="column">Home</a>
+            <a href = "#3" className="column">Contact</a>
+            <a className="column">FAQ</a>
+        </nav>
+          <a href = "#2" className="AboutB">About</a>
       </div>
       {/* Big cloud and mission statement in the middle */}
-      <div className="clouds">
+      <div id = '1' className="clouds">
         <div className="mission"> Empowering Students, Building Community, Inspiring Growth</div>
       </div>
       {/* About us */}
-      <div className="AboutUs">
+      <div id = '2' className="AboutUs" >
         <div className="hori" style = {{alignItems: 'center', justifyContent: 'space-between'}}>
           <div className="vert" >
             <p className = 'titles abt'><u>About Us</u></p>
-            <div className = 'paragraphs' style = {{paddingLeft: '5vw', marginBottom: '12vh'}}>We are on a mission to connect college students through 
+            <div className = 'paragraphs' style = {{paddingLeft: '4vw', marginBottom: '12vh'}}>We are on a mission to connect college students through 
               innovative technology, fostering a supportive community, 
               and enhancing academic success.</div>
           </div>
-          <img src= {designs} style = {{height: '90vh', marginRight: '10vw'}}alt="" />
+          <img src= {designs} style = {{height: '100vh', marginLeft: '-10vw'}}alt="" />
         </div>
       </div>
       {/* Why Choose Us? */}
@@ -72,7 +72,7 @@ function App() {
         </div>
       </div>
       {/* Contact Us */}
-      <div className="contact">
+      <div id = '3' className="contact">
         <div className="hori infor">
           <div className="vert inf">
             <div style = {{fontSize: '3vh', width: '600px', textAlign: 'left', fontWeight: 'bold', marginRight: '30vh'}}>Feel free to contact us any time. We will get back to you 
@@ -84,7 +84,7 @@ function App() {
                 <div className="line"/>
                 <p className = 'b'>Message</p>
                 <div className="line"/>
-                <button style = {{height: '8vh', width: '20vw',borderRadius: '20px', fontSize: '2vh', fontWeight: '500', alignSelf: 'center', marginTop: '2vh'}}>Send
+                <button style = {{height: '8vh', width: '20vw',borderRadius: '20px', fontSize: '2vh', fontWeight: '500', alignSelf: 'center', marginTop: '2vh', cursor: 'pointer'}}>Send
                 </button>
               </div>
             </div>
@@ -97,12 +97,12 @@ function App() {
       <div className="footer">
         <div className="vert" style = {{alignItems: 'center', justifyContent: 'space-evenly'}}>
           <div className="hori" style = {{alignItems: 'center', justifyContent: 'space-evenly', width: '40vw', marginTop: '6vh'}}>
-          <div className="column bottom">Home</div>
-          <div className="column bottom">Contact</div>
-          <div className="column bottom">FAQ</div>
-          <div className="column bottom">About</div>
+          <a href = "#1" className="column bottom">Home</a>
+          <a href = "#3" className="column bottom">Contact</a>
+          <a href = "#1" className="column bottom">FAQ</a>
+          <a href = "#2" className="column bottom">About</a>
           </div>
-          <p style = {{color: 'white', marginTop: '5vh'}}>Built and Designed by COLI </p>
+          <p style = {{color: 'white', marginTop: '5vh', width: '230px'}}>Built and Designed by COLI All rights reserved. ©</p>
         </div>
         
       </div>
